@@ -8,8 +8,7 @@ import {
   FlatCards,
 } from './components';
 
-const Src = () => {
-  return (
+const Src = () => (
     <SafeAreaView>
       <ScrollView>
         <FlatCards />
@@ -20,6 +19,5 @@ const Src = () => {
       </ScrollView>
     </SafeAreaView>
   );
-};
 
 export default Src;

@@ -1,8 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const FancyCard = () => {
-  return (
+const FancyCard = () => (
     <View>
       <Text style={styles.headingText}>Trending Places</Text>
       <View style={[styles.card, styles.cardElevated]}>
@@ -24,7 +23,6 @@ const FancyCard = () => {
       </View>
     </View>
   );
-};
 
 export default FancyCard;
 

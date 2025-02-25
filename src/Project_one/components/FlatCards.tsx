@@ -1,8 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const FlatCards = () => {
-  return (
+const FlatCards = () => (
     <View>
       <Text style={styles.headingText}>Flat Cards</Text>
       <View style={styles.container}>
@@ -21,7 +20,6 @@ const FlatCards = () => {
       </View>
     </View>
   );
-};
 
 export default FlatCards;
 

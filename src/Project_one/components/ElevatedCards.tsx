@@ -1,8 +1,7 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const ElevatedCards = () => {
-  return (
+const ElevatedCards = () => (
     <View>
       <Text style={styles.headingText}>Elevated Cards</Text>
       <ScrollView horizontal style={styles.container}>
@@ -24,7 +23,6 @@ const ElevatedCards = () => {
       </ScrollView>
     </View>
   );
-};
 
 export default ElevatedCards;
 

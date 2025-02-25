@@ -28,8 +28,7 @@ const contacts = [
   },
 ];
 
-const ContactList = () => {
-  return (
+const ContactList = () => (
     <View>
       <Text style={styles.headingText}>ContactList</Text>
       <ScrollView style={styles.container} scrollEnabled={false}>
@@ -45,7 +44,6 @@ const ContactList = () => {
       </ScrollView>
     </View>
   );
-};
 
 export default ContactList;
 

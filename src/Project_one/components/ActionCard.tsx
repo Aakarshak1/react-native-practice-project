@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import React from 'react';
 
-const ActionCard = () => {
+function ActionCard() {
   const openWebsite = (url: string) => {
     Linking.openURL(url);
   };
@@ -49,7 +49,7 @@ const ActionCard = () => {
       </View>
     </View>
   );
-};
+}
 
 export default ActionCard;
 
