@@ -3,7 +3,8 @@ import { SafeAreaView, StatusBar, useColorScheme } from 'react-native';
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-import ProjectOne from './Project_one';
+import _ProjectOne from './Project_one';
+import ProjectTwo from './Project_two';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,7 +19,7 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ProjectOne />
+      <ProjectTwo />
     </SafeAreaView>
   );
 }
