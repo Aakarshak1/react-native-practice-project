@@ -8,6 +8,8 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
+    'react/function-component-definition': 0,
+    'import/no-unresolved': [2, { ignore: ['^@react-native'] }],
     'import/extensions': [
       'error',
       'never',
@@ -17,6 +19,20 @@ module.exports = {
         tsx: 'never',
       },
     ],
-    'import/un-resolved': false,
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: [
+          '.js',
+          '.jsx',
+          '.ts',
+          '.tsx',
+          '.ios.js',
+          '.android.js',
+          '.config.js',
+        ],
+      },
+    },
   },
 };
