@@ -1,0 +1,83 @@
+1. Live Exchange Rates
+💡 Integrate a real-time currency API (like exchangerate-api.com, Fixer.io, or Open Exchange Rates).
+
+Automatically update conversion values instead of hardcoding them.
+
+2. Currency Search or Dropdown
+Use a searchable dropdown (e.g., react-native-paper, react-native-dropdown-picker) to select currencies.
+
+Make it easier for users to find uncommon currencies.
+
+3. Reverse Conversion
+Add a "swap" button 🔁 to switch between "From" and "To" currencies.
+
+Example: Convert from USD → INR or INR → USD with one tap.
+
+4. Conversion History
+Show a list of recent conversions.
+
+Store this in local state or AsyncStorage.
+
+5. Input Validation & Feedback
+Show error if input is empty or non-numeric.
+
+Add subtle animations or shake input on invalid entry.
+
+
+
+ Phase 1: Core UX & UI Polish (High Priority)
+ 🧱 Add flex: 1 to root SafeAreaView to ensure full height layout.
+
+ 🎨 Improve button layout and spacing for consistency.
+
+ ✅ Add input validation for empty/non-numeric values.
+
+ 📱 Use KeyboardAvoidingView to handle keyboard overlap with input.
+
+ 🌓 Add light/dark mode support based on system theme.
+
+
+ 🔹 Phase 2: Feature Enhancements
+ 🌍 Integrate live exchange rate API (e.g., Fixer.io or Open Exchange Rates).
+
+ 🔁 Add “Swap Currencies” button (INR → USD / USD → INR).
+
+ 🔎 Replace static currency buttons with searchable dropdown list.
+
+ 🕓 Add conversion history (stored in AsyncStorage or Redux).
+
+ 📤 Add share or copy-to-clipboard functionality for conversion result.
+
+
+ 🔹 Phase 3: UI/UX Improvements
+ 🎞 Add smooth animations (e.g., fade-in result, press feedback on buttons).
+
+ 🚫 Show error feedback (toast/snackbar) for failed conversion or API issues.
+
+ 🎯 Improve accessibility (add accessibilityLabel, increase tap targets).
+
+ 🌐 Format currency and number display using Intl.NumberFormat.
+
+
+ 🔹 Phase 4: Technical Improvements
+ 🔄 Add loading state while fetching conversion data.
+
+ 🧪 Add unit tests for conversion logic using Jest.
+
+ 🏗 Refactor to use reusable button/input components.
+
+ 🧰 Use environment variables (.env) to manage API keys securely.
+
+🔹 Phase 5: Advanced Features (Optional but Nice-to-Have)
+ 📊 Show small rate trend graphs (e.g., sparkline charts).
+
+ 🗣 Add localization/i18n for multiple languages.
+
+ 🚀 Optimize performance for low-end devices.
+
+ ☁️ Enable offline fallback with last-known exchange rates.
+
+
+ Currency Flags or Symbols next to dropdowns.
+
+Unit Test your conversion logic with Jest.

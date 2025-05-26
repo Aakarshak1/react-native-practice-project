@@ -8,6 +8,7 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
+    'import/no-extraneous-dependencies': false,
     'react/function-component-definition': 0,
     'import/no-unresolved': [2, { ignore: ['^@react-native'] }],
     'import/extensions': [
