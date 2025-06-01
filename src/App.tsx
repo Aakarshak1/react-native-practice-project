@@ -5,7 +5,8 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import _ProjectOne from './Project_one';
 import _ProjectTwo from './Project_two';
-import ProjectThree from './Project_three';
+import _ProjectThree from './Project_three';
+import ProjectFour from './Project_four';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -21,7 +22,7 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ProjectThree />
+      <ProjectFour />
     </SafeAreaView>
   );
 }
