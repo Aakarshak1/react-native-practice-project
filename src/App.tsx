@@ -7,8 +7,9 @@ import _ProjectOne from './Project_one';
 import _ProjectTwo from './Project_two';
 import _ProjectThree from './Project_three';
 import _ProjectFour from './Project_four';
+import _ProjectFive from './Project_five';
 
-import ProjectFive from './Project_five';
+import ProjectSix from './Project_six';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -24,7 +25,7 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ProjectFive />
+      <ProjectSix />
     </SafeAreaView>
   );
 }
