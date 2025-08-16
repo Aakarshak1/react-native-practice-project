@@ -1,7 +1,7 @@
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import Snackbar from 'react-native-snackbar';
-import { FAB } from '@rneui/themed';
+// import { FAB } from '@rneui/themed';
 
 import { useAppwriteContext } from '../appwrite/AppwriteContext';
 
@@ -57,14 +57,15 @@ const Home = () => {
           </View>
         )}
       </View>
-      <FAB
+      {/* get alternative */}
+      {/* <FAB
         placement="right"
         color="#F02E65"
         size="large"
         title="logout"
         icon={{ name: 'logout', color: '#FFFFFF' }}
         onPress={handleLogout}
-      />
+      /> */}
     </SafeAreaView>
   );
 };
