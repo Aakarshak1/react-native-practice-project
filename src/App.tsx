@@ -9,8 +9,8 @@ import _ProjectThree from './Project_three';
 import _ProjectFour from './Project_four';
 import _ProjectFive from './Project_five';
 import _ProjectSix from './Project_six';
-
-import ProjectSeven from './Project_seven';
+import _ProjectSeven from './Project_seven';
+import ReactNativeForm from './ReactNativeForm';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -26,7 +26,7 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ProjectSeven />
+      <ReactNativeForm />
     </SafeAreaView>
   );
 }
